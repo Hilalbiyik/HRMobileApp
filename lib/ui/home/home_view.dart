@@ -35,20 +35,18 @@ class HomeView extends StatelessWidget {
         icon: "🙅‍♂️",
         title: 'PM Team',
         subtitle: '20 big rains',
-        backgroundColor: ConstantsColor.purpleColor,
+        backgroundColor: ConstantsColor.lightPurpleColor,
       ),
       CustomCard(
         icon: "🙅‍♂️",
         title: 'Sales Team',
         subtitle: '8 minyaj',
-        backgroundColor: ConstantsColor.bodyColor,
+        backgroundColor: ConstantsColor.greenColor,
       ),
     ];
     
     return Scaffold(
-      // appBar: AppBar(
-      //   //backgroundColor: Colors.amber,
-      // ),
+     
       backgroundColor: Colors.white,
       bottomNavigationBar: buildBottomNavigationBar(navBarHeight, navBarWidth),
       body: Column(
