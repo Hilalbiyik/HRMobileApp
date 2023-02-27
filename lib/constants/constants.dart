@@ -35,11 +35,13 @@ class ConstantsColor {
   static const lightGreyColor = const Color(0xfff5f5f5);
 
   static const purpleColor = const Color(0xffb293ed);
-  static const orangeColor = const Color(0xfffaddb5);
-  static const lightorangeColor = const Color(0xffffe8c2);
+  static const lightPurpleColor = const Color(0xffe1d7fc);
+  static const greenColor = const Color(0xffe5fbec);
+  static const orangeColor = const Color(0xfffcf1d5);
+  static const lightorangeColor = const Color(0xfffef9ef);
 
-  static const pinkColor = const Color(0xfffdd6da);
-  static const lightPinkColor = const Color(0xfffadde1);
+  static const pinkColor = const Color(0xfffcd6da);
+  static const lightPinkColor = const Color(0xfffcebed);
   static const redColor = const Color(0xffee6463);
   static const blueColor = const Color(0xff2477fd);
   static const lightblueColor = const Color(0xfff6fafd);
