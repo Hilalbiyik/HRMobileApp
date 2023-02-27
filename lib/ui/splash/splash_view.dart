@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:hr_mobile_app/constants/constants.dart';
+import 'package:hr_mobile_app/ui/onBoarding/onboarding_view.dart';
 import 'package:lottie/lottie.dart';
-
 
 class SplashView extends StatefulWidget {
   @override
@@ -12,22 +13,26 @@ class _SplashViewState extends State<SplashView> {
   void initState() {
     super.initState();
     Future.delayed(Duration(seconds: 5), () {
-      
+       Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => OnBoardingView(),
+        ),
+      );
     });
   }
 
-final sampleLottieUrl = "https://assets6.lottiefiles.com/packages/lf20_8Psf5B.json";
   @override
   Widget build(BuildContext context) {
            
     return Scaffold(
-      backgroundColor: Color(0xfff9f9f9), 
+      backgroundColor: Colors.white, 
       body: Center(
         child: Container(
           width: MediaQuery.of(context).size.width * 0.5, 
           height: MediaQuery.of(context).size.width * 0.5, 
           child: Lottie.network(
-            sampleLottieUrl, 
+            ConstantsAdress.sampleLottieUrl, 
             fit: BoxFit.cover, 
           ),
         ),
